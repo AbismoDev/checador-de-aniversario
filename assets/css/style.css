@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 2%;
+    width: 100%;
+}
+
+.container--app {
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.container--texto {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    gap: 5px;
+}
+
+.container--texto h1 {
+    color: #00319c;
+}
+
+.container--texto p {
+    color: #00319c;
+    font-size: 16px;
+}
+
+.container--form {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+
+.container--form input {
+    text-align: center;
+    max-width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    height: 35px;
+    width: 100%;
+}
+
+.container--form button {
+    background-color: #00319c;
+    max-width: 200px;
+    font-weight: 600;
+    transition: .3s;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    height: 35px;
+    border: none;
+    width: 100%;
+}
+
+.container--form button:hover {
+    transform: scale(.955);
+}
+
+.container--resultado {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50px;
+    display: flex;
+    width: 100%;
+} 
+
+.container--mensagem {
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.sucesso {
+    color: rgb(38, 141, 12);
+}
+
+.aviso {
+    color: rgb(144, 153, 13);
+}
+
+.erro {
+    color: rgb(175, 25, 25);
+}
