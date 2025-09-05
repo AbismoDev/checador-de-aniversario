@@ -80,8 +80,27 @@
 
 .container--resultado {
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 50px;
     display: flex;
     width: 100%;
-}   
+} 
+
+.container--mensagem {
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.sucesso {
+    color: rgb(38, 141, 12);
+}
+
+.aviso {
+    color: rgb(144, 153, 13);
+}
+
+.erro {
+    color: rgb(175, 25, 25);
+}
