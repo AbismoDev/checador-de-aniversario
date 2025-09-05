@@ -26,11 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if(dataAtual.getDate() === dataNascimento.getDate() && dataAtual.getMonth() === dataNascimento.getMonth()) {
             // Aqui faremos a mensagem de parabens.            
+            const musicaParabens = new Audio("assets/audio/musica--parabens.mp3");
             res.innerHTML = `
                 <div class="container--mensagem sucesso">
                     <p>🎉 Parabéns, hoje é seu aniversario! 🎉</p>
                 </<div>
             `
+            musicaParabens.volume = 0.3;
+            musicaParabens.play();
         }
         else {
             // Aqui faremos o retorno de quantos dias faltam para o proximo aniversario.
